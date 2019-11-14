@@ -1,9 +1,11 @@
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\controller\Transaccion.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\ejb\AbstractFacade.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\ejb\TareaFacade.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\ejb\UsuarioFacadeLocal.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\entities\Tarea.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\entities\Usuario.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\ejb\UsuarioFacade.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\controller\TransaccionLocal.java
-D:\Udec\2019-2\linea de profundizacion\Projectos\transacciones\ejb\src\main\java\ejb\TareaFacadeLocal.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\ejb\UsuarioFacade.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Interfaces\TransaccionError.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Interfaces\TransaccionErrorLocal.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Excepciones\ExcepcionSinRollback.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Interfaces\TransaccionLocal.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Excepciones\ExcepcionGenerica.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\ejb\AbstractFacade.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Interfaces\Transaccion.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\Excepciones\ExcepcionRollback.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\entities\Usuario.java
+C:\Users\naruk\OneDrive\Documentos\NetBeansProjects\Exceptions\ejb\src\main\java\ejb\UsuarioFacadeLocal.java

@@ -15,26 +15,45 @@ import javax.persistence.Table;
 
 /**
  *
- * @author DJMEDINA
+ * Entidad Usuario 
  */
 
 @Entity
 @Table(name = "usuario")
 public class Usuario implements Serializable {
     private static final long serialVersionUID = 1L;
+    /**
+     * id del usuario
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    /**
+     * nombre del usuario
+     */
     @Column(name = "nombre")
     private String nombre;
     
+    /**
+     * apellido del usuario
+     */
     @Column(name = "apellido")
     private String apellido;
     
+    /**
+     * correo
+     */
     @Column(name = "correo")
     private String correo;
 
+    /**
+     * constructor
+     * @param id
+     * @param nombre
+     * @param apellido
+     * @param correo 
+     */
     public Usuario(int id, String nombre, String apellido, String correo) {
         this.id = id;
         this.nombre = nombre;
@@ -42,9 +61,18 @@ public class Usuario implements Serializable {
         this.correo = correo;
     }
 
+    /**
+     * cosntructor
+     */
     public Usuario() {
     }
 
+    /**
+     * constructor
+     * @param nombre
+     * @param apellido
+     * @param correo 
+     */
     public Usuario(String nombre, String apellido, String correo) {
         this.nombre = nombre;
         this.apellido = apellido;

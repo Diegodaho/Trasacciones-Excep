@@ -11,183 +11,36 @@
                 width: 100%;
                 display: block;
             }
-            div{
-                width: 50%;
-            }
             button{
                 width: 100%;
             }
-            .tg  {border-collapse:collapse;border-spacing:0;width:100%;}
-            .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-            .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
         </style>
     </h:head>
     <h:body>
         <h:form>
-            Sin Transacción
+            <p:growl id="growl" showDetail="true" sticky="true" />
             <div style="width:100%">
-                <table class="tg">
-                    <tr>
-                        <th class="tg-0lax">Required ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton11()}" />
-                        </th>
-                        <th class="tg-0lax">Required ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton11f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">RequiredNew ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton12()}" />
-                        </th>
-                        <th class="tg-0lax">RequiredNew ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton12f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Supports ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton13()}" />
-                        </th>
-                        <th class="tg-0lax">Supports ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton13f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Mandatory ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton14()}" />
-                        </th>
-                        <th class="tg-0lax">Mandatory ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton14f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Not Supports ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton15()}" />
-                        </th>
-                        <th class="tg-0lax">Not Supports ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton15f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Never ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton16()}" />
-                        </th>
-                        <th class="tg-0lax">Never ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton16f()}" />
-                        </th>
-                    </tr>
-                </table>
+                <p:commandButton update="users " value="Sin Rollback Sistema" style="margin:0" action="#{index.excepcionSinRollback()}" />
+                <p:commandButton update="users " value="Con Rollback Sistema" style="margin:0" action="#{index.excepcionConRollback()}" />
+                <p:commandButton update="users " value="Sin Rollback Personalizada" style="margin:0" action="#{index.excepcionSinRollbackPersonalizada()}" />
+                <p:commandButton update="users " value="Con Rollback Personalizada" style="margin:0" action="#{index.excepcionConRollbackPersonalizada()}" />
             </div>
-            Con Transacción
-            <div style="width:100%">
-                <table class="tg">
-                    <tr>
-                        <th class="tg-0lax">Required ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton21()}" />
-                        </th>
-                        <th class="tg-0lax">Required ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton21f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">RequiredNew ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton22()}" />
-                        </th>
-                        <th class="tg-0lax">RequiredNew ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton22f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Supports ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton23()}" />
-                        </th>
-                        <th class="tg-0lax">Supports ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton23f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Mandatory ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton24()}" />
-                        </th>
-                        <th class="tg-0lax">Mandatory ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton24f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Not Supports ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton25()}" />
-                        </th>
-                        <th class="tg-0lax">Not Supports ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton25f()}" />
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="tg-0lax">Never ok ok</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton26()}" />
-                        </th>
-                        <th class="tg-0lax">Never ok fail</th>
-                        <th class="tg-0lax">
-                            <p:commandButton update="tareaaTable tareaaTable2" value="btn" icon="pi pi-check" style="margin:0" action="#{index.boton26f()}" />
-                        </th>
-                    </tr>
-                </table>
-            </div>
-            <div style="width:100%">
-                <p:commandButton update="tareaaTable tareaaTable2" value="Limpiar" icon="pi pi-check" style="margin:0" action="#{index.clearData()}" />
-                <p:dataTable id="tareaaTable" class="tg" var="tarea" value="#{index.tareas}">
-                    <p:column headerText="Id">
-                        <h:outputText value="#{tarea.id}" />
-                    </p:column>
 
-                    <p:column headerText="Year">
-                        <h:outputText value="#{tarea.nombre}" />
-                    </p:column>
-
-                    <p:column headerText="Brand">
-                        <h:outputText value="#{tarea.duracion}" />
-                    </p:column>
-                </p:dataTable>
-            </div>
             <div style="width:100%">
-                <p:dataTable id="tareaaTable2" class="tg" var="user" value="#{index.usuarios}">
-                    <p:column headerText="Id">
-                        <h:outputText value="#{user.id}" />
-                    </p:column>
-
-                    <p:column headerText="Year">
+                <p:dataTable id="users" class="tg" var="user" value="#{index.users}">
+                    <p:column headerText="Nombre">
                         <h:outputText value="#{user.nombre}" />
                     </p:column>
 
-                    <p:column headerText="Brand">
+                    <p:column headerText="Apellido">
+                        <h:outputText value="#{user.apellido}" />
+                    </p:column>
+
+                    <p:column headerText="Correo">
                         <h:outputText value="#{user.correo}" />
                     </p:column>
                 </p:dataTable>
             </div>
-            
-
         </h:form>
 
     </h:body>
